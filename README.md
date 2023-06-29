@@ -24,8 +24,7 @@ The webhook endpoint is:
     localhost:3000/api/webhook
 ```
 
-The payload to the webhook endopoint is a json with two mandatory fields: pdfContent and sendQuoteWith
-#Example
+The payload to the webhook endopoint is a json with two mandatory fields: pdfContent and sendQuoteWith. The pdfContent is a base64 encoding format string. #Example
 ```zsh
 {
   "pdfContent" : "xxxx",
