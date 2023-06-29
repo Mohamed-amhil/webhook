@@ -9,7 +9,7 @@ Install the dependancies by running:
 ```zsh
     npm install
 ```
-Run the server:  
+Run the server in the terminal:  
 ```zsh
     node api/server.js
 ```
