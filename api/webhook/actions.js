@@ -14,7 +14,7 @@ module.exports = {
             .then(() => {
                 console.log('PDF saved successfully!');
                 console.log('sendQuoteWith Value:', sendQuoteWith);
-                res.sendStatus(200);
+                res.sendStatus(201);
             })
             .catch((error) => {
                 console.error('Error saving PDF:', error);
