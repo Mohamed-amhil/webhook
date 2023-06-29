@@ -10,11 +10,11 @@ localhost:3000/api/health
 The webhook endpoint:
 localhost:3000/api/webhook
 
-The payload to the webhook endopoint should be json with two mandatory fields: pdfContent and fieldValue
+The payload to the webhook endopoint should be json with two mandatory fields: pdfContent and sendQuoteWith
 #Example
 {
 "pdfContent" : "xxxx",
-"fieldValue" : "xxx"
+"sendQuoteWith" : "xxx"
 }
 
 To run with ngrok:
