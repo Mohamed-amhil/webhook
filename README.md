@@ -14,7 +14,7 @@ Run the server:
     node api/server.js
 ```
 
-Test the health of the api in the browser:
+Test the health of the api in the browser or postman:
 ```zsh
     localhost:3000/api/health
 ```
