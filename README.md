@@ -1,25 +1,42 @@
-Simple api with a webhook endpoint that receives PDF file.
+##Simple api with a webhook endpoint that receives PDF file.
 
-After cloning the repo, install the dependancies by running: 
-npm install
-
+Clone the repo: 
+```zsh
+    git clone https://github.com/Mohamed-amhil/webhook.git
+    cd webhook
+```
+Install the dependancies by running:
+```zsh
+    npm install
+```
 Run the server:  
-node api/server.js
+```zsh
+    node api/server.js
+```
 
 Test the health of the api:
-localhost:3000/api/health
-
+```zsh
+    localhost:3000/api/health
+```
 
 The webhook endpoint is:
-localhost:3000/api/webhook
+```zsh
+    localhost:3000/api/webhook
+```
 
 The payload to the webhook endopoint is a json with two mandatory fields: pdfContent and sendQuoteWith
 #Example
+```zsh
 {
-"pdfContent" : "xxxx",
-"sendQuoteWith" : "xxx"
+  "pdfContent" : "xxxx",
+  "sendQuoteWith" : "xxx"
 }
+```
+
 
 To run with ngrok:
-ngrok http 3000
+```zsh
+    ngrok http 3000
+```
+
 
