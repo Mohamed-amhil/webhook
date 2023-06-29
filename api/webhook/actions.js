@@ -4,7 +4,7 @@ const { promisify } = require('util');
 
 module.exports = {
     receivePdf(req, res, next){
-        const { pdfContent, fieldValue } = req.body;
+        const { pdfContent, sendQuoteWith } = req.body;
 
         const decodedPDF = Buffer.from(pdfContent, 'base64');
         const savePDF = promisify(fs.writeFile);
@@ -13,7 +13,7 @@ module.exports = {
         savePDF(pdfPath, decodedPDF)
             .then(() => {
                 console.log('PDF saved successfully!');
-                console.log('Field Value:', fieldValue);
+                console.log('Field Value:', sendQuoteWith);
                 res.sendStatus(200);
             })
             .catch((error) => {
